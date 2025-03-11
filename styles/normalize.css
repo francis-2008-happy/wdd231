@@ -287,7 +287,7 @@ footer p {
 
 
 
-/* Reset and Global Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -307,9 +307,12 @@ header {
     background-color: #1a4a6e;
     color: white;
     padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: relative;
+    gap: 20px;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
     position: relative;
     gap: 20px;
 }
