@@ -3,104 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> WDD 231 Course Home Page - Francis Happy </title>
-    <script src="scripts/dates.js" defer></script>
-
-    <meta name="description" content="Welcome to the Course home page! Learn essential web development skills, including HTML, CSS, and best practices for creating responsive websites.">
-    <meta name="keywords" content="HTML, CSS, JavaScript, WDD 131, Dynamic Web Fundamentals, Francis Happy">
-    <meta name="author" content="Francis Happy">
+    <meta name="description" content="WDD231 Course Home Page - Web and Computer Programming Certificate">
+    <meta name="author" content="Your Name">
+    <title>WDD231 Course Home Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Bree+Serif&display=swap" rel="stylesheet">
-  
-    <!-- Normalize CSS (to make styles consistent across browsers) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-
-    <!-- Small Screen Styles (Default) -->
-    <link rel="stylesheet" href="styles/small.css">
-
-    <!-- Larger Screen Styles (Contains media queries) -->
-    <link rel="stylesheet" href="styles/large.css">
-
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class= "header1">
-        <img src="images/francis.jpg" alt="Francis Happy" >
-        <h1> Francis Happy </h1>
-    </div>
-
-    <div class = "header2">
-        <nav>
-            <a href="index.html">Home</a> 
-            <a href="#">Chamber</a>
-            <a href="#">GitHub Profile</a>
-            <a href="www.linkedin.com/in/francis-happy-3a9559144">Linkedin</a>
-        </nav>
-    </div>
-</header>
-
-<main>
-    
-    <h2> Home </h2>
-    <div class="topmain">
-        <div class = "course_work">
-            <div class = "me"> <h2> Course Work </h2> </div>
+    <header>
+        <img src="images/francis.jpg" alt="Profile Photo">
+        <span> ---FRANCIS HAPPY</span>
+        <button id="hamburger-btn">☰</button>
+    </header>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="https://github.com/francis-2008-happy" target="_blank">GitHub Profile</a></li>
+            <li><a href="www.linkedin.com/in/francis-happy-3a9559144" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        
+        <section id="course-work">
+            <h2>Course Work</h2>
             <ul>
-                <li> </li>
-                <li>  </li>
-                <li>  </li>
+                <li>Assignment 1</li>
+                <li>Assignment 2</li>
+                <li>Assignment 3</li>
             </ul>
-
-
-        </div>
-
-        <div class ="web_dev">
-            <div class=" web"> <h2> Web Dev Resource </h2> </div>
+        </section>
         
-            <div class= "links">
-            <img src="images/nigeria_flag.jpg" alt="Picture of Nigeria">
-            <p> Picture Of Nigeria</p>
+        <section id="location">
+            <h2>Location Name, Country</h2>
+            <div class="image-container">
+                <img src="images/nigeria_flag.jpg" alt="Location Photo">
+                <p class="caption">Nigeria MY Country</p>
             </div>
-
-        </div>
-    </div>
-
-    <div class ="bottommain">
-        <div class="web_computer"> <h2> Web and Computer Programming Certificate </h2></div>
+        </section>
         
-        <div class="dark">
-            <div class ="dark1"> ALL </div>
-            <div class ="dark1"> CSE </div>
-            <div class ="dark1"> WDD </div>
-        </div>
-        <hr>
-        <div class ="blue">
-            <div class ="blue1"> CSE 110 </div>
-            <div class ="blue1"> WDD 130 </div>
-            <div class ="blue1"> CSE111 </div>
-            
-        </div>
-
-        <div class = "red">
-            <div class ="red1"> CSE 210 </div>
-            <div class ="red2"> WDD 131 </div>
-            <div class ="red3"> WDD 231 </div>
-            
-        </div>
-    </div>
-
-
-
-
-</main>
-
-<footer>
-  <p> &copy; <span id="copyright-year"> </span> Francis Happy - Ajah Lagos Nigeria. <br>last modified: 
-  <span id="last-modified"> </span> </p>
-</footer>
-
-<script src="scripts/dates.js"></script>
-<script src="scripts/course.js"></script>
+        <section id="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button id="btn-all" class="active">All</button>
+                <button id="btn-cse">CSE</button>
+                <button id="btn-wdd">WDD</button>
+            </div>
+            <div id="course-container"></div>
+            <p id="total-credits">Total Credits: 0</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Francis Happy - Lagos Nigeria </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
