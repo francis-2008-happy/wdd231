@@ -253,6 +253,19 @@ footer p {
     #course-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .double {
+        flex-direction: column; 
+        width: 100%; 
+        height: auto;
+        gap: 20px;
+    }
+
+    #course-work, #location {
+        width: 90%; 
+        height: auto; 
+        margin: 0 auto; 
+        padding: 15px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
