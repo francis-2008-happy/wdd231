@@ -194,10 +194,21 @@ main {
     padding: 0.7rem;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    
+}  
 
-}     
+.day {
+    font-size: 16px;
+}
 
+.temp {
+    font-size: 24px;
+}
+
+.current {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .forecast{
     margin-top: 30px;
     margin-left: 30px;

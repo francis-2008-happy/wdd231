@@ -5,7 +5,7 @@ const members = [
         address: "123 Market Street, Timbuktu, MAI 999",
         phone: "800-555-1001",
         website: "www.timbuktutraders.com",
-        image: "images/traders.jpg",
+        image: "images/traders.jpeg",
         membership: 3,
         description: "Local marketplace for unique goods"
     },
@@ -14,7 +14,7 @@ const members = [
         address: "45 Oasis Road, Timbuktu, MAI 999",
         phone: "800-555-1002",
         website: "www.saharasands.com",
-        image: "images/hotel.jpg",
+        image: "images/hotel.png",
         membership: 2,
         description: "Luxury accommodations in the heart of Timbuktu"
     },
@@ -23,7 +23,7 @@ const members = [
         address: "67 Caravan Lane, Timbuktu, MAI 999",
         phone: "800-555-1003",
         website: "www.nomadsrest.com",
-        image: "images/cafe.jpg",
+        image: "images/cafe.jpeg",
         membership: 1,
         description: "Authentic local cuisine and beverages"
     },
@@ -32,7 +32,7 @@ const members = [
         address: "89 Desert Way, Timbuktu, MAI 999",
         phone: "800-555-1004",
         website: "www.goldendunestours.com",
-        image: "images/tours.jpg",
+        image: "images/tours.jpeg",
         membership: 3,
         description: "Guided tours of the Sahara"
     },
@@ -41,7 +41,7 @@ const members = [
         address: "101 Weaver's Alley, Timbuktu, MAI 999",
         phone: "800-555-1005",
         website: "www.timbuktutextiles.com",
-        image: "images/textiles.jpg",
+        image: "images/textiles.jpeg",
         membership: 2,
         description: "Traditional fabrics and clothing"
     },
@@ -50,7 +50,7 @@ const members = [
         address: "202 Silicon Dunes, Timbuktu, MAI 999",
         phone: "800-555-1006",
         website: "www.oasistech.com",
-        image: "images/tech.jpg",
+        image: "images/tech.png",
         membership: 1,
         description: "IT services for local businesses"
     },
@@ -59,7 +59,7 @@ const members = [
         address: "303 Expedition Road, Timbuktu, MAI 999",
         phone: "800-555-1007",
         website: "www.camelcaravans.com",
-        image: "images/caravans.jpg",
+        image: "images/caravans.jpeg",
         membership: 3,
         description: "Transportation and logistics services"
     }
