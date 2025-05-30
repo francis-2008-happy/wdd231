@@ -142,17 +142,17 @@ document.getElementById('menu-button').addEventListener('click', function () {
 });
 
 // View toggle functionality
-document.getElementById('grid-view').addEventListener('click', function () {
-    document.getElementById('member-cards').className = 'grid-view';
-    document.getElementById('grid-view').classList.add('active');
-    document.getElementById('list-view').classList.remove('active');
-});
+// document.getElementById('grid-view').addEventListener('click', function () {
+//     document.getElementById('member-cards').className = 'grid-view';
+//     document.getElementById('grid-view').classList.add('active');
+//     document.getElementById('list-view').classList.remove('active');
+// });
 
-document.getElementById('list-view').addEventListener('click', function () {
-    document.getElementById('member-cards').className = 'list-view';
-    document.getElementById('list-view').classList.add('active');
-    document.getElementById('grid-view').classList.remove('active');
-});
+// document.getElementById('list-view').addEventListener('click', function () {
+//     document.getElementById('member-cards').className = 'list-view';
+//     document.getElementById('list-view').classList.add('active');
+//     document.getElementById('grid-view').classList.remove('active');
+// });
 
 // Toggle mobile menu
 const menuButton = document.getElementById('menu-button');

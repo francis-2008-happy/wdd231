@@ -581,7 +581,7 @@ footer {
         font-size: 1rem;
     }
 
-    /* #menu-button {
+     #menu-button {
         display: block;
         position: absolute;
         top: 1rem;
@@ -609,43 +609,8 @@ footer {
         text-align: center;
         padding: 0.5rem;
         width: 100%;
-    } */
-    
-    #menu-button {
-    display: block;
-    /* Show on mobile */
-    }
-    
-    #navigation {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 70%;
-        height: 100vh;
-        background-color: var(--primary-color);
-        padding-top: 5rem;
-         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
-        overflow-y: auto;
-    }
-    
-    #navigation.show {
-        left: 0;
-    }
-    
-    .navigation {
-        flex-direction: column;
-        padding: 1rem;
-    }
-    
-    .navigation li {
-        margin: 1rem 0;
-    }
-    
-    .navigation img {
-        margin-top: 1rem;
-    }
-    
+    } 
+ 
     /* Add overlay when menu is open */
     .overlay {
         position: fixed;
