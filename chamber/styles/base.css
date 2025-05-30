@@ -288,7 +288,120 @@ footer {
     margin-bottom: 1rem;
 }
 
+
+/* media quries  */
+
+
 @media (max-width: 768px) {
+
+    /* Header adjustments */
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tim h1,
+    .tim p {
+        margin: 0.2rem 0;
+    }
+
+    /* Navigation adjustments */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    nav ul img {
+        margin: 0 auto;
+    }
+
+    /* Hero image adjustments */
+    .hero img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .call-to-action button {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Box layout adjustments */
+    .boxs {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .events,
+    .weather,
+    .fore {
+        padding: 1rem;
+    }
+
+    /* Current weather adjustments */
+    .current {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Directory controls */
+    .directory-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .view-toggle {
+        margin-top: 1rem;
+    }
+
+    /* Member cards grid/list view */
+    .grid-view {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer adjustments */
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+    /* General typography adjustments */
+    h1,
+    h2,
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Menu button visibility */
+    #menu-button {
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation.show {
+        display: flex;
+    }
+}
+
+/* @media (max-width: 768px) {
     .navigation {
         flex-direction: column;
         display: none;
@@ -316,4 +429,4 @@ footer {
         flex-direction: row;
         justify-content: space-between;
     }
-}
+} */
