@@ -134,3 +134,7 @@ document.getElementById('menu-button').addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
     displayMembers();
 });
+
+document.getElementById('menu-button').addEventListener('click', function () {
+    document.querySelector('.navigation').classList.toggle('show');
+});
