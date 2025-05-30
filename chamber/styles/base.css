@@ -39,7 +39,7 @@ header {
     justify-content:center;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 25rem;
+    gap: 15rem;
 }
 
 .logo{
@@ -56,7 +56,9 @@ header {
     font-size: 40px;
 }
 .tim p {
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: bold;
 }
 
 header img {
@@ -578,30 +580,8 @@ footer {
     .tim p {
         font-size: 1rem;
     }
-/* 
-    #menu-button {
-        display: block;
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-    }
 
-    .navigation {
-        flex-direction: column;
-        display: none;
-        width: 100%;
-    }
-
-    .navigation.show {
-        display: flex;
-    }
-
-    .navigation li {
-        text-align: center;
-        padding: 0.5rem;
-    } */
-
-    #menu-button {
+    /* #menu-button {
         display: block;
         position: absolute;
         top: 1rem;
@@ -629,7 +609,60 @@ footer {
         text-align: center;
         padding: 0.5rem;
         width: 100%;
+    } */
+    
+    #menu-button {
+    display: block;
+    /* Show on mobile */
     }
+    
+    #navigation {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: var(--primary-color);
+        padding-top: 5rem;
+         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        overflow-y: auto;
+    }
+    
+    #navigation.show {
+        left: 0;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .navigation li {
+        margin: 1rem 0;
+    }
+    
+    .navigation img {
+        margin-top: 1rem;
+    }
+    
+    /* Add overlay when menu is open */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        display: none;
+    }
+    
+    .overlay.show {
+        display: block;
+    }
+    
+    
     .hero img {
         width: 100%;
         height: auto;
