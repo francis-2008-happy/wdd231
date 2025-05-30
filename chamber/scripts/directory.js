@@ -154,22 +154,6 @@ document.getElementById('menu-button').addEventListener('click', function () {
 //     document.getElementById('grid-view').classList.remove('active');
 // });
 
-// Toggle mobile menu
-const menuButton = document.getElementById('menu-button');
-const navigation = document.getElementById('navigation');
-const overlay = document.querySelector('.overlay');
-
-menuButton.addEventListener('click', function () {
-    navigation.classList.toggle('show');
-    overlay.classList.toggle('show');
-});
-
-// Close menu when clicking overlay
-overlay.addEventListener('click', function () {
-    navigation.classList.remove('show');
-    overlay.classList.remove('show');
-});
-
 document.addEventListener('DOMContentLoaded', function () {
     const menuButton = document.getElementById('menu-button');
     const navigation = document.getElementById('navigation');

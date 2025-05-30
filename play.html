@@ -4,28 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home of Timbuktu Chamber of Commerce member businesses">
-    <meta name="author" content="Your Name">
-    <meta property="og:title" content="Timbuktu Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://your-site-url/images/timbuktu-social.jpg">
-    <meta property="og:url" content="https://your-site-url/chamber/home.html">
-    <title>Timbuktu Chamber of Commerce - Directory</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap"
-        rel="stylesheet">
+    <title>Timbuktu Chamber of Commerce</title>
     <style>
-        :root {
-            --primary-color: #1a5276;
-            --secondary-color: #d4ac0d;
-            --background-color: #f8f9fa;
-            --text-color: #333;
-            --card-bg: #ffffff;
-            --border-color: #ddd;
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -33,469 +13,244 @@
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--background-color);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
+            font-family: Arial, sans-serif;
         }
 
         header {
-            background-color: var(--primary-color);
+            background: linear-gradient(135deg, #2c5aa0, #1e3a5f);
             color: white;
-            padding: 1rem;
+            padding: 1rem 0;
+            position: relative;
         }
 
         .header-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
         }
 
-        .tim {
+        .logo {
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo img {
+            background: white;
+            padding: 0.5rem;
+            border-radius: 8px;
         }
 
         .tim h1 {
-            font-size: 40px;
+            font-size: 2rem;
+            margin-bottom: 0.25rem;
         }
 
         .tim p {
-            font-size: 20px;
+            font-size: 1rem;
+            opacity: 0.9;
         }
 
-        header img {
-            margin-right: 1rem;
-        }
-
-        h1,
-        h2,
-        h3 {
-            font-family: 'Merriweather', serif;
-        }
-
-        h1 {
+        /* Menu Button Styling */
+        #menu-button {
+            display: none;
+            /* Hidden by default, shown on mobile */
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
             font-size: 1.5rem;
-        }
-
-        h2 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-        }
-
-        nav {
             padding: 0.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+            z-index: 1001;
+        }
+
+        #menu-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Desktop Navigation */
+        #navigation {
+            display: block;
         }
 
         .navigation {
             display: flex;
             list-style: none;
-            justify-content: space-around;
-            max-width: 1200px;
-            margin: 0 auto;
+            gap: 2rem;
             align-items: center;
         }
 
-        .navigation a {
+        .navigation li a {
             color: white;
             text-decoration: none;
-            padding: 0.5rem;
-        }
-
-        .navigation a:hover {
-            text-decoration: underline;
-        }
-
-        .navigation a.active {
-            font-weight: bold;
-        }
-
-        #menu-button {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        main {
-            flex: 1;
-            padding: 1rem;
-            max-width: 1200px;
-            margin: 0 auto;
-            width: 100%;
-        }
-
-        .hero {
-            position: relative;
-            display: inline-block;
-            width: 100%;
-            margin-bottom: 2rem;
-        }
-
-        .hero img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .call-to-action {
-            position: absolute;
-            top: 70%;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .call-to-action button {
-            background-color: var(--secondary-color);
-            color: var(--text-color);
-            padding: 12px 24px;
-            border: none;
-            border-radius: 6px;
-            font-weight: bold;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .home {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-
-        .boxs {
-            display: flex;
-            justify-content: space-between;
-            gap: 10px;
-            width: 100%;
-            height: 300px;
-            margin-bottom: 2rem;
-        }
-
-        .events {
-            background-color: white;
-            width: 60%;
-            height: 100%;
-            border-radius: 5px;
-            border: 3px solid var(--border-color);
-        }
-
-        .fore {
-            background-color: white;
-            width: 20%;
-            height: 100%;
-            border-radius: 5px;
-            border: 3px solid var(--border-color);
-        }
-
-        .weather {
-            background-color: white;
-            width: 20%;
-            height: 100%;
-            border-radius: 5px;
-            border: 3px solid var(--border-color);
-        }
-
-        .eve,
-        .cur,
-        .wea {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 0.7rem;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        .current {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        .current img {
-            width: 60px;
-            height: 60px;
-            margin-bottom: 0.5rem;
-        }
-
-        .current p {
-            margin: 2px 0;
-            font-size: 12px;
-        }
-
-        .forecast {
-            padding: 1rem;
-            text-align: center;
-        }
-
-        .forecast p {
-            margin: 8px 0;
-            font-size: 12px;
-        }
-
-        .day {
-            font-size: 12px;
-            display: block;
-        }
-
-        .temp {
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .directory-controls {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-
-        .view-toggle button {
             padding: 0.5rem 1rem;
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
             border-radius: 4px;
-            cursor: pointer;
-            margin-left: 0.5rem;
+            transition: background 0.3s ease;
         }
 
-        .view-toggle button.active {
-            background-color: var(--secondary-color);
-            color: var(--text-color);
+        .navigation li a:hover,
+        .navigation li a.active {
+            background: rgba(255, 255, 255, 0.2);
         }
 
-        .grid-view {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1rem;
-        }
-
-        .list-view {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .member-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 1rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .member-card img {
-            width: 80px;
-            height: 80px;
-            background-color: #e0e0e0;
-            border-radius: 4px;
-            flex-shrink: 0;
-        }
-
-        .member-info h3 {
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-            font-size: 18px;
-        }
-
-        .member-info p {
-            margin-bottom: 0.25rem;
-            font-size: 14px;
-            color: #666;
-        }
-
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .contact-info h3 {
-            margin-bottom: 1rem;
-        }
-
-        .social-media {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        .social-media img {
-            width: 40px;
-            height: 40px;
-            background-color: white;
+        .navigation li img {
             border-radius: 50%;
-            padding: 8px;
+            border: 2px solid white;
+        }
+
+        /* Overlay for mobile menu */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        .overlay.active {
+            display: block;
         }
 
         /* Mobile Styles */
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
-                gap: 1rem;
+                align-items: flex-start;
+                position: relative;
             }
 
-            .header-content img {
-                width: 80px;
-                height: 40px;
+            .logo {
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 1rem;
             }
 
             .tim h1 {
-                font-size: 24px;
+                font-size: 1.5rem;
             }
 
             .tim p {
-                font-size: 16px;
+                font-size: 0.9rem;
             }
 
+            /* Show menu button on mobile */
             #menu-button {
                 display: block;
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
             }
 
-            nav {
-                display: none;
+            /* Mobile Navigation */
+            #navigation {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background: linear-gradient(135deg, #2c5aa0, #1e3a5f);
+                padding: 2rem 1rem;
+                transition: right 0.3s ease;
+                z-index: 1000;
+                box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
             }
 
-            nav.show {
-                display: block;
+            #navigation.active {
+                right: 0;
             }
 
             .navigation {
                 flex-direction: column;
-                gap: 0.5rem;
+                gap: 0;
+                align-items: stretch;
+                height: 100%;
+                padding-top: 3rem;
+            }
+
+            .navigation li {
+                width: 100%;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .navigation li:last-child {
+                border-bottom: none;
+                margin-top: auto;
+                text-align: center;
                 padding: 1rem 0;
             }
 
-            .navigation img {
-                width: 20px;
-                height: 20px;
-            }
-
-            .hero {
-                margin-bottom: 1rem;
-            }
-
-            .call-to-action {
-                top: 60%;
-            }
-
-            .call-to-action button {
-                padding: 8px 16px;
-                font-size: 14px;
-            }
-
-            .home {
-                font-size: 1.5rem;
-                margin-bottom: 1rem;
-            }
-
-            .boxs {
-                flex-direction: column;
-                height: auto;
-                gap: 1rem;
-            }
-
-            .events,
-            .weather,
-            .fore {
+            .navigation li a {
+                display: block;
+                padding: 1rem;
+                font-size: 1.1rem;
+                border-radius: 0;
                 width: 100%;
-                height: auto;
-                min-height: 150px;
-            }
-
-            .current {
-                flex-direction: row;
                 text-align: left;
-                padding: 1rem;
             }
 
-            .current img {
-                width: 50px;
-                height: 50px;
-                margin-right: 1rem;
-                margin-bottom: 0;
+            .navigation li a:hover,
+            .navigation li a.active {
+                background: rgba(255, 255, 255, 0.1);
+                border-left: 4px solid white;
+                padding-left: calc(1rem - 4px);
             }
 
-            .current div p {
-                font-size: 14px;
-                margin: 1px 0;
+            /* Close button in mobile nav */
+            #navigation::before {
+                content: "✕";
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                font-size: 1.5rem;
+                color: white;
+                cursor: pointer;
+                padding: 0.5rem;
+                border-radius: 4px;
+                transition: background 0.3s ease;
             }
 
-            .forecast {
-                padding: 1rem;
+            #navigation::before:hover {
+                background: rgba(255, 255, 255, 0.2);
             }
+        }
 
-            .forecast p {
-                display: flex;
-                justify-content: space-between;
-                margin: 10px 0;
-                font-size: 14px;
-            }
+        /* Main content styling for demo */
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-            .directory-controls {
-                flex-direction: column;
-                gap: 1rem;
-                align-items: stretch;
-            }
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: #f8f9fa;
+            margin: 2rem 0;
+            border-radius: 12px;
+        }
 
-            .view-toggle {
-                display: flex;
-                justify-content: center;
-            }
+        .hero h2 {
+            font-size: 2.5rem;
+            color: #2c5aa0;
+            margin-bottom: 1rem;
+        }
 
-            .grid-view {
-                grid-template-columns: 1fr;
-            }
-
-            .member-card {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .member-card img {
-                width: 60px;
-                height: 60px;
-            }
-
-            .footer-content {
-                gap: 1.5rem;
-            }
-
-            .social-media {
-                gap: 1rem;
-            }
-
-            .social-media img {
-                width: 30px;
-                height: 30px;
-            }
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -503,158 +258,105 @@
 <body>
     <header>
         <div class="header-content">
-            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZDRhYzBkIi8+Cjx0ZXh0IHg9IjEwMCIgeT0iNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzFhNTI3NiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TE9HTzwvdGV4dD4KPC9zdmc+"
-                alt="Timbuktu Chamber of Commerce Logo" width="200" height="100">
-            <div class="tim">
-                <h1>Timbuktu</h1>
-                <p>Chamber of Commerce</p>
+            <div class="logo">
+                <img src="https://via.placeholder.com/200x100/ff4444/ffffff?text=TIMBUKTU"
+                    alt="Timbuktu Chamber of Commerce Logo" width="200" height="100">
+                <div class="tim">
+                    <h1>Timbuktu</h1>
+                    <p>Chamber of Commerce</p>
+                </div>
             </div>
             <button id="menu-button">☰</button>
+            <div class="overlay"></div>
+            <nav id="navigation">
+                <ul class="navigation">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><img src="https://via.placeholder.com/30x30/cccccc/666666?text=👤" alt="Profile" width="30"
+                            height="30"></li>
+                </ul>
+            </nav>
         </div>
-        <nav id="navigation">
-            <ul class="navigation">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Discover</a></li>
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTUiIGN5PSIxNSIgcj0iMTUiIGZpbGw9IiNkNGFjMGQiLz4KPC9zdmc+"
-                    alt="Picture of" width="30" height="30">
-            </ul>
-        </nav>
     </header>
 
-    <main class="directory-main">
-        <section class="hero">
-            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2MDAiIHZpZXdCb3g9IjAgMCAxMjAwIDYwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjZTBlMGUwIi8+Cjx0ZXh0IHg9IjYwMCIgeT0iMzEwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IiM2NjYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkNoYW1iZXIgSW1hZ2U8L3RleHQ+Cjwvc3ZnPg=="
-                alt="Chamber images" width="1200" height="600">
-            <div class="call-to-action">
-                <button>Keynote Tickets</button>
-            </div>
-        </section>
-
-        <h1 class="home">Home</h1>
-
-        <div class="boxs">
-            <div class="events">
-                <h2 class="eve">Events</h2>
-                <div style="padding: 1rem; text-align: center; color: #666;">
-                    <p>No upcoming events</p>
-                </div>
-            </div>
-
-            <div class="weather">
-                <h3 class="cur">Current Weather</h3>
-                <div class="current">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjUwIiBjeT0iNDAiIHI9IjE1IiBmaWxsPSIjZmZkNzAwIi8+CjxwYXRoIGQ9Ik0yMCA2MEwzMCA3MEw3MCA3MEw4MCA2MEw3MCA1MEwzMCA1MEwyMCA2MFoiIGZpbGw9IiNjY2MiLz4KPC9zdmc+"
-                        alt="Sunny weather icon" width="100" height="100">
-                    <div>
-                        <p><strong>75° F</strong></p>
-                        <p>Partly Cloudy</p>
-                        <p>High: 85°</p>
-                        <p>Low: 52°</p>
-                        <p>Humidity: 34%</p>
-                        <p>Sunrise: 7:30am</p>
-                        <p>Sunset: 9:59pm</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fore">
-                <h3 class="wea">Weather Forecast</h3>
-                <div class="forecast">
-                    <p><span class="day">Today:</span> <span class="temp">90°F</span></p>
-                    <p><span class="day">Wednesday:</span> <span class="temp">89°F</span></p>
-                    <p><span class="day">Thursday:</span> <span class="temp">68°F</span></p>
-                </div>
-            </div>
+    <main>
+        <div class="hero">
+            <h2>Welcome to Timbuktu</h2>
+            <p>Connecting businesses and fostering economic growth in our historic city. Join our thriving community of
+                entrepreneurs and established businesses.</p>
         </div>
 
-        <div class="directory-controls">
-            <h2>Member Directory</h2>
-            <div class="view-toggle">
-                <button id="grid-view" class="active">Grid View</button>
-                <button id="list-view">List View</button>
-            </div>
-        </div>
-
-        <div id="member-cards" class="grid-view">
-            <div class="member-card">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjZTBlMGUwIi8+CjwvdXN2Zz4="
-                    alt="Business placeholder">
-                <div class="member-info">
-                    <h3>Business Name</h3>
-                    <p>Business Tag Line</p>
-                    <p><strong>EMAIL:</strong> info@email.com</p>
-                    <p><strong>PHONE:</strong> 800-555-1234</p>
-                    <p><strong>URL:</strong> mybusiness.com</p>
-                </div>
-            </div>
-
-            <div class="member-card">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjZTBlMGUwIi8+CjwvdXN2Zz4="
-                    alt="Business placeholder">
-                <div class="member-info">
-                    <h3>Business Name</h3>
-                    <p>Business Tag Line</p>
-                    <p><strong>EMAIL:</strong> info@email.com</p>
-                    <p><strong>PHONE:</strong> 800-555-1234</p>
-                    <p><strong>URL:</strong> mybusiness.com</p>
-                </div>
-            </div>
-        </div>
+        <p>This is a demo of the mobile-responsive navigation. Try resizing your browser window or viewing on a mobile
+            device to see the hamburger menu in action.</p>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="contact-info">
-                <h3>Timbuktu Chamber of Commerce</h3>
-                <p>10 Rue De La Paix</p>
-                <p>Timbuktu, Mali 999</p>
-                <p>info@timbuktucc.org</p>
-                <p>(223) 555-2300</p>
-            </div>
-
-            <div class="social-media">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmYwMDAwIiByeD0iNCIvPgo8L3N2Zz4="
-                    alt="YouTube">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjMWRhMWYyIiByeD0iNCIvPgo8L3N2Zz4="
-                    alt="Twitter">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjMDA3N2I1IiByeD0iNCIvPgo8L3N2Zz4="
-                    alt="LinkedIn">
-            </div>
-
-            <div class="dev-info">
-                <p>&copy;<span id="copyright-year">2025</span> Timbuktu Chamber of Commerce</p>
-                <p>WDD231 Class Project</p>
-                <p>Marie Martinez</p>
-                <p>Last Modified: <span id="last-modified">May 30, 2025</span></p>
-            </div>
-        </div>
-    </footer>
-
     <script>
-        // Mobile menu toggle
-        document.getElementById('menu-button').addEventListener('click', function () {
-            const nav = document.getElementById('navigation');
-            nav.classList.toggle('show');
+        // Mobile menu functionality
+        const menuButton = document.getElementById('menu-button');
+        const navigation = document.getElementById('navigation');
+        const overlay = document.querySelector('.overlay');
+
+        // Toggle menu function
+        function toggleMenu() {
+            navigation.classList.toggle('active');
+            overlay.classList.toggle('active');
+
+            // Change hamburger to X when open
+            if (navigation.classList.contains('active')) {
+                menuButton.innerHTML = '✕';
+            } else {
+                menuButton.innerHTML = '☰';
+            }
+        }
+
+        // Close menu function
+        function closeMenu() {
+            navigation.classList.remove('active');
+            overlay.classList.remove('active');
+            menuButton.innerHTML = '☰';
+        }
+
+        // Event listeners
+        menuButton.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', closeMenu);
+
+        // Close menu when clicking the X in the nav
+        navigation.addEventListener('click', function (e) {
+            if (e.target === navigation && e.clientX > navigation.offsetWidth - 50) {
+                closeMenu();
+            }
         });
 
-        // View toggle functionality
-        document.getElementById('grid-view').addEventListener('click', function () {
-            document.getElementById('member-cards').className = 'grid-view';
-            document.getElementById('grid-view').classList.add('active');
-            document.getElementById('list-view').classList.remove('active');
+        // Close menu when clicking on navigation links (optional)
+        const navLinks = document.querySelectorAll('.navigation a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
         });
 
-        document.getElementById('list-view').addEventListener('click', function () {
-            document.getElementById('member-cards').className = 'list-view';
-            document.getElementById('list-view').classList.add('active');
-            document.getElementById('grid-view').classList.remove('active');
+        // Handle window resize
+        window.addEventListener('resize', function () {
+            if (window.innerWidth > 768) {
+                closeMenu();
+            }
         });
 
-        // Set current year and last modified date
-        document.getElementById('copyright-year').textContent = new Date().getFullYear();
-        document.getElementById('last-modified').textContent = document.lastModified;
+        // Prevent body scroll when menu is open
+        const observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+                if (mutation.target.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        observer.observe(navigation, {
+            attributes: true,
+            attributeFilter: ['class']
+        });
     </script>
 </body>
 
