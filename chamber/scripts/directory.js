@@ -135,6 +135,21 @@ document.addEventListener('DOMContentLoaded', () => {
     displayMembers();
 });
 
+
 document.getElementById('menu-button').addEventListener('click', function () {
-    document.querySelector('.navigation').classList.toggle('show');
+    const nav = document.getElementById('navigation');
+    nav.classList.toggle('show');
+});
+
+// View toggle functionality
+document.getElementById('grid-view').addEventListener('click', function () {
+    document.getElementById('member-cards').className = 'grid-view';
+    document.getElementById('grid-view').classList.add('active');
+    document.getElementById('list-view').classList.remove('active');
+});
+
+document.getElementById('list-view').addEventListener('click', function () {
+    document.getElementById('member-cards').className = 'list-view';
+    document.getElementById('list-view').classList.add('active');
+    document.getElementById('grid-view').classList.remove('active');
 });
