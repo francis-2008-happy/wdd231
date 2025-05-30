@@ -428,6 +428,10 @@ footer {
     .hero {
         margin-bottom: 1rem;
     }
+    .hero img {
+        height: auto;
+        max-width: 100%;
+        }
 
     .call-to-action {
         top: 60%;
@@ -452,7 +456,7 @@ footer {
     .events,
     .weather,
     .fore {
-        width: 100%;
+        max-width:100%;
         height: auto;
         min-height: 150px;
     }
