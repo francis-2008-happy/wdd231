@@ -169,3 +169,21 @@ overlay.addEventListener('click', function () {
     navigation.classList.remove('show');
     overlay.classList.remove('show');
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuButton = document.getElementById('menu-button');
+    const navigation = document.getElementById('navigation');
+    const overlay = document.querySelector('.overlay');
+
+    // Toggle menu
+    menuButton.addEventListener('click', function () {
+        navigation.classList.toggle('show');
+        overlay.classList.toggle('show');
+    });
+
+    // Close menu when clicking overlay
+    overlay.addEventListener('click', function () {
+        navigation.classList.remove('show');
+        overlay.classList.remove('show');
+    });
+});
