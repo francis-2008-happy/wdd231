@@ -30,15 +30,22 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30rem;
+    gap: 10rem;
 }
 
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 25rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .tim{
     display: flex;
