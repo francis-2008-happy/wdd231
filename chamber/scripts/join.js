@@ -70,3 +70,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Add to join.js
+document.getElementById('joinForm').addEventListener('submit', function (e) {
+    if (!this.checkValidity()) {
+        e.preventDefault();
+        // Show validation messages
+    }
+});
