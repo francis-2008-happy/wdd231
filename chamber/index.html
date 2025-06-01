@@ -62,7 +62,7 @@
 
             </div>
 
-            <div class="weather">
+            <!-- <div class="weather">
                 <h3 class="cur">Current Weather</h3>
                 <div class="current">
                     <img src="images/weather_icon.svg" alt="Sunny weather icon" width="100" height="100">
@@ -84,6 +84,19 @@
                     <p><span class="day">Wednesday:</span> <span class="temp">89°F</span></p>
                     <p><span class="day">Thursday:</span> <span class="temp">68°F</span></p>
                 </div>
+            </div> -->
+
+            <div class="weather">
+                <div class="wea">Current Weather</div>
+                <div class="current-weather">
+                    <div id="current-temp"></div>
+                    <div id="weather-desc"></div>
+                    <img id="weather-icon" src="" alt="">
+                </div>    
+            </div>
+            <div class="fore">
+                <h3 class="cur">3-Day Forecast</h3>
+                <div id="forecast-container"></div>
             </div>
 
         </div>
@@ -96,9 +109,24 @@
                 <button id="list-view">List View</button>
             </div>
         </div>
-        <div id="member-cards" class="grid-view">
-            <!-- Member cards will be inserted here by JavaScript -->
+
+        <!-- Spotlight Section -->
+        <div class="spotlight">
+            <h2>Member Spotlight</h2>
+            <div id="spotlight-cards" class="grid-view">
+                <!-- JavaScript will populate this -->
+            </div>
         </div>
+        
+        <!-- Main Directory -->
+        <div id="member-cards" class="grid-view">
+            <!-- JavaScript will populate this -->
+        </div>
+
+        <!-- <div class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container"></div>  
+        </div> -->
     </main>
 
     <footer>
@@ -130,6 +158,7 @@
 
     <script src="scripts/directory.js"></script>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>

@@ -187,3 +187,34 @@ document.addEventListener('DOMContentLoaded', function () {
         overlay.classList.remove('show');
     });
 });
+
+// added on the 31st of may 2025
+// Member spotlight implementation
+fetch('data/members.json')
+    .then(response => response.json())
+    .then(members => {
+        // Filter gold/silver members
+        const qualifiedMembers = members.filter(member =>
+            member.level === 'Gold' || member.level === 'Silver');
+
+        // Randomly select 2-3 members
+        const shuffled = qualifiedMembers.sort(() => 0.5 - Math.random());
+        const selected = shuffled.slice(0, Math.min(3, Math.max(2, shuffled.length)));
+
+        // Display spotlights
+        const container = document.getElementById('spotlight-container');
+        selected.forEach(member => {
+            const card = document.createElement('div');
+            card.className = 'spotlight-card';
+            card.innerHTML = `
+                <img src="${member.image}" alt="${member.name}">
+                <h3>${member.name}</h3>
+                <p>${member.description}</p>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <a href="${member.website}" target="_blank">Visit Website</a>
+                <div class="member-level">${member.level} Member</div>
+            `;
+            container.appendChild(card);
+        });
+    });
