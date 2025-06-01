@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Thank You page of Timbuktu Chamber of Commerce member businesses, that has lots of featueres like a directory, events, and weather updates. it alsoe includes a member spotlight section to highlight local businesses.">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://your-site-url/images/timbuktu-social.jpg">
+    <meta property="og:url" content="https://francis-2008-happy.github.io/wdd231/chamber/thankyou.html">
+    <title> Thank You page of the Timbuktu Chamber of Commerce - Directory</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/timbuktu_logo.png" alt="Timbuktu Chamber of Commerce Logo" width="200" height="100">
+                <div class="tim">
+                    <h1>Timbuktu </h1>
+                    <p> Chamber of Commerce </p>
+                </div>
+            </div>
+            <button id="menu-button">☰</button>
+            <div class="overlay"></div>
+            <nav id="navigation">
+                <ul class="navigation">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><img src="images/circle.jpeg" alt="Profile" width="30" height="30"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="thankyou-container">
+        <h1>Thank You for Joining!</h1>
+    
+        <div class="confirmation-details">
+            <h2>Your Application Details</h2>
+            <div id="confirmationContent">
+                <!-- Details will be populated by JavaScript -->
+            </div>
+        </div>
+    
+        <p>We'll review your application and contact you shortly. Welcome to our community!</p>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Timbuktu Chamber of Commerce</h3>
+                <p>10 Main Street</p>
+                <p>Timbuktu, MAI 999</p>
+                <p>info@timbuktucc.org</p>
+                <p>(223) 555-2300</p>
+            </div>
+
+            <div class="social-media">
+                <img src="images/youtube_logo.webp" alt="Picture of Youtube" width="50" height="50">
+                <img src="images/twitter_logo.webp" alt="Picture of Twitter" width="50" height="50">
+                <img src="images/linkedin_logo.webp" alt="Picture of linkedin" width="50" height="50">
+
+            </div>
+
+
+            <div class="dev-info">
+                <p>&copy;<span id="copyright-year"></span> Timbuktu Chamber of Commerce</p>
+                <p>Francis Happy </p>
+                <p>WDD 231 - Web Frontend Development I</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/directory.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/thankyou.js"></script>
+
+</body>
+
+</html>
