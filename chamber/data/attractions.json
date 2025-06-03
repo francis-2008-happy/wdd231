@@ -1,0 +1,52 @@
+{
+    "attractions": [
+        {
+            "name": "Historic Downtown",
+            "address": "123 Main Street, Anytown, ST 12345",
+            "description": "Our charming downtown area features unique shops, restaurants, and monthly community events.",
+            "image": "images/downtown.jpeg"
+        },
+        {
+            "name": "Riverwalk Park",
+            "address": "456 Riverside Drive, Anytown, ST 12345",
+            "description": "A beautiful 3-mile paved trail along the river with picnic areas and scenic views.",
+            "image": "images/riverwalk.jpeg"
+        },
+        {
+            "name": "Anytown Museum",
+            "address": "789 Heritage Lane, Anytown, ST 12345",
+            "description": "Learn about our town's rich history through interactive exhibits and artifacts.",
+            "image": "images/museum.jpeg"
+        },
+        {
+            "name": "Mountain Vista",
+            "address": "101 Scenic Highway, Anytown, ST 12345",
+            "description": "Breathtaking views from this overlook with hiking trails and photo opportunities.",
+            "image": "images/vista.jpeg"
+        },
+        {
+            "name": "Community Theater",
+            "address": "202 Center Avenue, Anytown, ST 12345",
+            "description": "Local productions year-round in our historic 1920s theater building.",
+            "image": "images/theater.jpeg"
+        },
+        {
+            "name": "Farmers Market",
+            "address": "303 Market Square, Anytown, ST 12345",
+            "description": "Fresh local produce, crafts, and food every Saturday morning May-October.",
+            "image": "images/market.jpeg"
+        },
+        {
+            "name": "Lakefront Recreation Area",
+            "address": "404 Lakeshore Drive, Anytown, ST 12345",
+            "description": "Swimming, boating, fishing, and camping facilities at our pristine lake.",
+            "image": "images/lake.jpeg"
+        },
+        {
+            "name": "Botanical Gardens",
+            "address": "505 Greenway Boulevard, Anytown, ST 12345",
+            "description": "20 acres of themed gardens showcasing native and exotic plant species.",
+            "image": "images/gardens.jpeg"
+        }
+    ]
+}
