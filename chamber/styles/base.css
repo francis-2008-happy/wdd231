@@ -615,6 +615,51 @@ footer {
                 transition: filter 0.3s ease; }
             }
 
+                        #menu-button {
+                            display: block;
+                            /* Show on mobile */
+                        }
+            
+                        #navigation {
+                            position: fixed;
+                            top: 0;
+                            right: -100%;
+                            width: 70%;
+                            height: 100vh;
+                            background-color: #000000;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            padding-top: 5rem;
+                            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+                            transition: right 0.3s ease;
+                            z-index: 1000;
+                        }
+            
+                        #navigation.show {
+                            right: 0;
+                        }
+            
+                        .navigation {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding: 0 2rem;
+                            gap: 2rem;
+                        }
+            
+                        .overlay {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            z-index: 999;
+                            display: none;
+                        }
+            
+                        .overlay.show {
+                            display: block;       }
+
 
 /* Large view styles (1025px and above) */
 @media screen and (min-width: 1025px) {
