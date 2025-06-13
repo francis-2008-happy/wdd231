@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #003366;
+    /* Navy blue - for headings and accents */
+    --secondary-color: #CC0000;
+    /* Church red - for buttons and highlights */
+    --accent-color: #FFD700;
+    /* Gold - for accents */
+    --background-color: #F5F5F5;
+    /* Light gray - for background */
+    --text-color: #333333;
+    /* Dark gray - for body text */
+}
+
+body {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Merriweather', Georgia, serif;
+    color: var(--primary-color);
+}
+
+h1 {
+    color: white;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.color-schema {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.typography-example {
+    margin: 15px 0;
+}
+
+.font-heading {
+    font-family: 'Merriweather', Georgia, serif;
+}
+
+.font-body {
+    font-family: 'Noto Sans', Arial, sans-serif;
+}
+
+.wireframe {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.wireframe img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+}
+
