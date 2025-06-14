@@ -187,6 +187,7 @@ nav {
         padding: 0 1rem;
         flex-direction: row;
         justify-content: space-between;
+        gap: 3rem;
     }
 
     .logo {
@@ -194,13 +195,13 @@ nav {
     }
 
     .logo h1 {
-        font-size: 3rem;
-        line-height: 2.5rem;
+        font-size: 8rem;
+        line-height: 1.5rem;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
     .logo p {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top: 0.3rem;
     }
 
