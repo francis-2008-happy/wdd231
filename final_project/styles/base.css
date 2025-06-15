@@ -83,17 +83,112 @@ nav {
     padding: 0.5rem;
 
 }
+.to{
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 4rem;
+}
 
-.box{
-    height: 1000px;
-    color:#978395;
+
+.welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+.francis{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.dorinda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.francis img {
+    width: 200px;
+    height: 250px;
+}
+
+.dorinda img {
+    width: 200px;
+    height: 250px;
+}
+
+.events{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
     margin: 1rem;
+}
+
+.upcoming, .annoucement, .scripture, .quick {
+    /* border:#180016 solid 4px; */
+    /* border-radius: 10px; */
+    padding: 1rem;
+    width: 400px;
+    height:300px;
+    text-align: center;
+
+
 }
 
 
 
+.annoucement li{
+    list-style: none;
+    font-weight: bold;
 
+}
+.annoucement h1{
+    background-color: var(--primary-color);
+    color:#ffffff
 
+}
+
+.upcoming li{
+    list-style: none;
+    font-weight: bold;
+}
+
+.scripture li {
+    list-style: none;
+}
+
+.quick li {
+    list-style: none;
+}
+
+.upcoming h1 {
+    background-color: var(--primary-color);
+    color: #ffffff
+}
+
+.scripture h1 {
+    background-color: var(--primary-color);
+    color: #ffffff
+}
+.quick h1 {
+    background-color: var(--primary-color);
+    color: #ffffff
+}
+
+.scripture a, .quick a{
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-top: 1rem;
+    font-weight: bold;
+
+}
 
 
 
@@ -269,6 +364,7 @@ nav {
     .welcome h1 {
         font-size: 1.8rem;
     }
+
 
     /* Footer Mobile Styles */
     .footer-content {
