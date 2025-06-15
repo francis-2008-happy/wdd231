@@ -357,12 +357,27 @@ nav {
     }
 
     .welcome {
-        padding: 2rem 1rem;
-        margin: 1rem 0;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 1rem;
     }
 
     .welcome h1 {
         font-size: 1.8rem;
+    }
+    .francis , .dorinda{
+        flex-direction:column;
+        text-align: center;
+    }
+
+
+    .events{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+
+
     }
 
 
