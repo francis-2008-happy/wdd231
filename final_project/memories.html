@@ -14,6 +14,7 @@
     <title>Lekki Stake YSA Connect - Home </title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/memories.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap"
@@ -43,10 +44,37 @@
         </div>
     </header>
     <main>
-        <marquee behavior="scroll" direction="left">
-            <h1 class="to"> WELCOME TO LEKKI STATE YSA CONNECT</h1>
-        </marquee>
+        <div class="memories-header">
+            <h1>Lekki Stake YSA Memory Wall</h1>
+            <p>Cherished moments and experiences from our Young Single Adult community</p>
+        </div>
 
+        <div class="controls">
+            <button class="btn btn-primary" id="loadMemoriesBtn">Load Memories</button>
+            <button class="btn btn-secondary" id="filterActivitiesBtn">Activities Only</button>
+            <button class="btn btn-secondary" id="filterTestimoniesBtn">Testimonies Only</button>
+            <button class="btn btn-secondary" id="showAllBtn">Show All</button>
+            <button class="btn btn-primary" id="clearStorageBtn">Clear Storage</button>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput"
+                placeholder="Search memories by title, author, or description...">
+        </div>
+        
+        <div id="memoriesContainer">
+            <div class="loading" id="loadingMessage">Click "Load Memories" to view our cherished moments</div>
+        </div>
+        
+        <!-- Modal -->
+        <div id="memoryModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <div class="modal-meta" id="modalMeta"></div>
+                <div class="modal-description" id="modalDescription"></div>
+            </div>
+        </div>
 
 
     </main>
@@ -78,7 +106,7 @@
             </div>
         </div>
     </footer>
-
+    <script type="module" src="scripts/memories.js"></script>
     <script src="scripts/main.js"></script>
 
 </body>

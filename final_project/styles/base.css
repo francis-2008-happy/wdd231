@@ -24,7 +24,8 @@ body {
 }
 
 header {
-    background-color: var(--primary-color);
+    background: linear-gradient(45deg, #180016, #4a0f45, #ee5a24);
+    /* background-color: var(--primary-color); */
     color: white;
     padding: 2rem;
     margin: 1rem;
@@ -86,7 +87,9 @@ nav {
 .to{
     color: var(--primary-color);
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -114,11 +117,15 @@ nav {
 .francis img {
     width: 200px;
     height: 250px;
+    border: 5px solid #180016;
+    border-radius: 10px;
 }
 
 .dorinda img {
     width: 200px;
     height: 250px;
+    border: 5px solid #180016;
+    border-radius: 10px;
 }
 
 .events{
@@ -150,8 +157,9 @@ nav {
 
 }
 .annoucement h1{
-    background-color: var(--primary-color);
-    color:#ffffff
+    background: linear-gradient(45deg, #180016,#4a0f45, #ee5a24);
+        border-radius: 20px;
+        color: #ffffff
 
 }
 
@@ -169,16 +177,20 @@ nav {
 }
 
 .upcoming h1 {
-    background-color: var(--primary-color);
-    color: #ffffff
+    background: linear-gradient(45deg, #180016,#4a0f45, #ee5a24);
+        border-radius: 20px;
+        color: #ffffff
 }
 
 .scripture h1 {
-    background-color: var(--primary-color);
-    color: #ffffff
-}
+    background: linear-gradient(45deg, #180016,#4a0f45, #ee5a24);
+        border-radius: 20px;
+        color: #ffffff
+    }
+
 .quick h1 {
-    background-color: var(--primary-color);
+    background: linear-gradient(45deg, #180016,#4a0f45, #ee5a24);
+    border-radius: 20px;
     color: #ffffff
 }
 
@@ -190,8 +202,56 @@ nav {
 
 }
 
+.pics{
+    background: linear-gradient(45deg, #180016, #4a0f45, #b4a7b7);
+    color:#fff;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-right: 15rem;
+    margin-left: 15rem;
+    border-radius: 20px;
+    
+}
+.down {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
 
+.down img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.down img:hover {
+    transform: scale(2.2) rotate(2deg);
+    z-index: 10;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: #180016;
+    cursor: pointer;
+}
 
+.down:hover img:not(:hover) {
+    opacity: 0.8;
+    transform: scale(0.95);
+}
+
+.down figcaption{
+    background: linear-gradient(45deg, #180016, #ee5a24);
+    color:#fff;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
 
 
@@ -200,7 +260,8 @@ nav {
 
 
 .footer-content{
-    background-color: var(--primary-color);
+    background: linear-gradient(45deg, #180016, #4a0f45, #86578c);
+    /* background-color: var(--primary-color); */
     color: white;
     padding: 2rem;
     text-align: center;

@@ -1,0 +1,348 @@
+{
+    "memories": [
+        {
+            "id": 1,
+            "title": "First YSA Beach Activity",
+            "date": "2024-03-15",
+            "category": "Activity",
+            "author": "Sarah Johnson",
+            "description": "What an amazing day at Tarkwa Bay! We had volleyball, swimming, and the most incredible sunset devotional. The spirit was so strong as we shared testimonies by the beach. This was truly a day I'll never forget - seeing everyone come together in fellowship and fun.",
+            "location": "Tarkwa Bay",
+            "attendees": 45,
+            "tags": [
+                "beach",
+                "volleyball",
+                "testimonies",
+                "fellowship"
+            ],
+            "imageUrl": "https://example.com/images/beach-activity.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Temple Trip Spiritual Experience",
+            "date": "2024-02-28",
+            "category": "Spiritual",
+            "author": "Michael Adebayo",
+            "description": "Our temple trip to Aba was life-changing. The peace I felt in the temple was indescribable. We had powerful discussions on the bus ride about eternal families and covenants. Sister Williams shared such a beautiful testimony about her conversion story.",
+            "location": "Aba Nigeria Temple",
+            "attendees": 32,
+            "tags": [
+                "temple",
+                "spiritual",
+                "covenants",
+                "testimonies"
+            ],
+            "imageUrl": "https://example.com/images/temple-trip.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Service Project at Orphanage",
+            "date": "2024-04-10",
+            "category": "Service",
+            "author": "Grace Okafor",
+            "description": "Serving at the Sunshine Orphanage reminded me why service is so important. The children's faces lit up when we brought school supplies and played games with them. We also helped repair their playground equipment. The joy we brought to those kids was nothing compared to what they gave us in return.",
+            "location": "Sunshine Orphanage, Lekki",
+            "attendees": 28,
+            "tags": [
+                "service",
+                "orphanage",
+                "children",
+                "playground"
+            ],
+            "imageUrl": "https://example.com/images/orphanage-service.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Monthly Game Night Victory",
+            "date": "2024-01-20",
+            "category": "Activity",
+            "author": "David Ogundimu",
+            "description": "Game night was epic! We played everything from Monopoly to charades. The highlight was definitely the scripture trivia competition. Brother Emmanuel's team somehow knew every obscure Book of Mormon reference. We laughed until our sides hurt and strengthened friendships.",
+            "location": "Lekki Stake Center",
+            "attendees": 38,
+            "tags": [
+                "games",
+                "trivia",
+                "scripture",
+                "friendship"
+            ],
+            "imageUrl": "https://example.com/images/game-night.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Testimony Meeting Miracle",
+            "date": "2024-05-05",
+            "category": "Spiritual",
+            "author": "Blessing Okoro",
+            "description": "During fast and testimony meeting, the Spirit was incredibly strong. Three people shared conversion stories, and there wasn't a dry eye in the room. Sister Peace talked about finding the church through the missionaries, and how it changed her entire family's trajectory. Such powerful testimonies of God's love.",
+            "location": "Lekki Ward Chapel",
+            "attendees": 52,
+            "tags": [
+                "testimony",
+                "conversion",
+                "spirit",
+                "family"
+            ],
+            "imageUrl": "https://example.com/images/testimony-meeting.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Cooking Class Cultural Exchange",
+            "date": "2024-03-30",
+            "category": "Activity",
+            "author": "Chioma Nwachuku",
+            "description": "Our international cooking class was amazing! We learned to make jollof rice, amala, and even tried some American dishes. The missionaries taught us how to make cookies, and we taught them proper pepper soup technique. Food really does bring people together across cultures.",
+            "location": "Cultural Hall",
+            "attendees": 25,
+            "tags": [
+                "cooking",
+                "culture",
+                "jollof",
+                "missionaries"
+            ],
+            "imageUrl": "https://example.com/images/cooking-class.jpg"
+        },
+        {
+            "id": 7,
+            "title": "Career Development Workshop",
+            "date": "2024-04-25",
+            "category": "Development",
+            "author": "Emmanuel Taiwo",
+            "description": "The career workshop with industry professionals was incredibly valuable. We learned about networking, interview skills, and even had mock interviews. Sister Adunni from the tech industry gave amazing advice about breaking into technology careers. Many of us left with clear action plans.",
+            "location": "Stake Center Conference Room",
+            "attendees": 41,
+            "tags": [
+                "career",
+                "networking",
+                "technology",
+                "interviews"
+            ],
+            "imageUrl": "https://example.com/images/career-workshop.jpg"
+        },
+        {
+            "id": 8,
+            "title": "Scripture Study Marathon",
+            "date": "2024-02-14",
+            "category": "Spiritual",
+            "author": "Peace Akinola",
+            "description": "Valentine's Day scripture study was the perfect way to show love for the Savior. We spent 4 hours going through the entire book of John, discussing Christ's love and sacrifice. The insights shared were profound, and I felt my testimony of Jesus Christ grow stronger with each chapter.",
+            "location": "Various Homes (Virtual)",
+            "attendees": 33,
+            "tags": [
+                "scripture",
+                "john",
+                "christ",
+                "valentine"
+            ],
+            "imageUrl": "https://example.com/images/scripture-study.jpg"
+        },
+        {
+            "id": 9,
+            "title": "Sports Day Championship",
+            "date": "2024-05-18",
+            "category": "Activity",
+            "author": "Joseph Adeniyi",
+            "description": "Sports day was competitive but so fun! We had football, basketball, and track events. The relay race was intense - Team Nephi barely beat Team Moroni at the finish line. Even those who didn't compete were amazing cheerleaders. Great way to build unity through healthy competition.",
+            "location": "Lekki Sports Complex",
+            "attendees": 56,
+            "tags": [
+                "sports",
+                "football",
+                "basketball",
+                "competition"
+            ],
+            "imageUrl": "https://example.com/images/sports-day.jpg"
+        },
+        {
+            "id": 10,
+            "title": "Pioneer Day Celebration",
+            "date": "2024-07-24",
+            "category": "Cultural",
+            "author": "Ruth Adeolu",
+            "description": "Learning about pioneer heritage was inspiring. We shared stories of modern-day pioneers - members who were first in their families to join the church. The parallels between the Utah pioneers and our own faith journeys were remarkable. We ended with traditional pioneer games and activities.",
+            "location": "Stake Center Grounds",
+            "attendees": 47,
+            "tags": [
+                "pioneer",
+                "heritage",
+                "faith",
+                "games"
+            ],
+            "imageUrl": "https://example.com/images/pioneer-day.jpg"
+        },
+        {
+            "id": 11,
+            "title": "Missionary Farewell Program",
+            "date": "2024-06-02",
+            "category": "Spiritual",
+            "author": "Hannah Ojo",
+            "description": "Elder Adebisi's farewell was both sad and exciting. His talk about courage to serve touched everyone's hearts. We presented him with a photo album of YSA memories and letters from each member. Watching him receive his mission call to Ghana was a highlight - the Spirit confirmed this was God's will.",
+            "location": "Lekki Ward Chapel",
+            "attendees": 63,
+            "tags": [
+                "missionary",
+                "farewell",
+                "ghana",
+                "courage"
+            ],
+            "imageUrl": "https://example.com/images/missionary-farewell.jpg"
+        },
+        {
+            "id": 12,
+            "title": "Community Garden Project",
+            "date": "2024-08-12",
+            "category": "Service",
+            "author": "Samuel Ogbonna",
+            "description": "Starting the community garden has been rewarding. We're growing vegetables to donate to local families in need. Working in the soil while discussing gospel principles created unique bonding experiences. Sister Mary's knowledge of traditional farming techniques impressed everyone. This project will feed both bodies and souls.",
+            "location": "Community Garden Site",
+            "attendees": 29,
+            "tags": [
+                "garden",
+                "vegetables",
+                "farming",
+                "donation"
+            ],
+            "imageUrl": "https://example.com/images/community-garden.jpg"
+        },
+        {
+            "id": 13,
+            "title": "Book Club Discussion",
+            "date": "2024-09-07",
+            "category": "Development",
+            "author": "Esther Bamidele",
+            "description": "Our book club discussion of 'Jesus the Christ' was incredibly enlightening. Each chapter sparked deep conversations about the Savior's mission and attributes. Brother John's insights about the Atonement brought new understanding to familiar scriptures. Reading together has strengthened our testimonies and friendships.",
+            "location": "Various Locations",
+            "attendees": 22,
+            "tags": [
+                "book-club",
+                "jesus-christ",
+                "atonement",
+                "scripture"
+            ],
+            "imageUrl": "https://example.com/images/book-club.jpg"
+        },
+        {
+            "id": 14,
+            "title": "Christmas Service Project",
+            "date": "2024-12-15",
+            "category": "Service",
+            "author": "Mary Oluwaseun",
+            "description": "Adopting families for Christmas was the best way to celebrate the season. We provided gifts, food, and most importantly, hope to 8 families. Seeing children's faces when they received new clothes and toys reminded us of God's love for all His children. This is what Christmas is really about.",
+            "location": "Various Family Homes",
+            "attendees": 44,
+            "tags": [
+                "christmas",
+                "adoption",
+                "families",
+                "gifts"
+            ],
+            "imageUrl": "https://example.com/images/christmas-service.jpg"
+        },
+        {
+            "id": 15,
+            "title": "New Year Goal Setting Retreat",
+            "date": "2025-01-03",
+            "category": "Development",
+            "author": "Daniel Okwu",
+            "description": "Our goal-setting retreat set the tone for an amazing year. We used gospel principles to create meaningful, spiritual goals. The accountability partnerships formed will help us stay on track. Breaking into small groups allowed for personal sharing about hopes and dreams. Everyone left feeling motivated and supported.",
+            "location": "Retreat Center, Epe",
+            "attendees": 39,
+            "tags": [
+                "goals",
+                "retreat",
+                "accountability",
+                "motivation"
+            ],
+            "imageUrl": "https://example.com/images/goal-setting.jpg"
+        },
+        {
+            "id": 16,
+            "title": "Institute Class Graduation",
+            "date": "2024-11-18",
+            "category": "Spiritual",
+            "author": "Faith Adebola",
+            "description": "Graduating from Institute was such a milestone! We completed studying the Doctrine and Covenants over 8 months. The final presentations were powerful - everyone shared how specific revelations impacted their lives. Brother Peterson's teaching made the restoration come alive. Knowledge truly is power, especially spiritual knowledge.",
+            "location": "Institute Building",
+            "attendees": 31,
+            "tags": [
+                "institute",
+                "graduation",
+                "doctrine-covenants",
+                "revelation"
+            ],
+            "imageUrl": "https://example.com/images/institute-graduation.jpg"
+        },
+        {
+            "id": 17,
+            "title": "Lagos Lagoon Boat Ride",
+            "date": "2024-10-14",
+            "category": "Activity",
+            "author": "Peter Okechukwu",
+            "description": "The boat ride across Lagos Lagoon was breathtaking! We sang hymns as we watched the sunset over the water. Sister Jennifer brought her guitar and we had an impromptu worship session on the boat. The peace of being on the water while singing 'How Great Thou Art' was unforgettable. Nature truly testifies of God.",
+            "location": "Lagos Lagoon",
+            "attendees": 35,
+            "tags": [
+                "boat-ride",
+                "lagoon",
+                "hymns",
+                "sunset"
+            ],
+            "imageUrl": "https://example.com/images/lagoon-boat.jpg"
+        },
+        {
+            "id": 18,
+            "title": "Leadership Training Conference",
+            "date": "2024-09-28",
+            "category": "Development",
+            "author": "Miracle Okafor",
+            "description": "The YSA leadership training was transformative. We learned about delegation, inspiration, and leading with love. Elder Martinez from the Area Presidency taught us about ministering and building Zion. The workshops on conflict resolution and team building were practical and gospel-centered. Ready to serve better!",
+            "location": "Area Office Conference Room",
+            "attendees": 48,
+            "tags": [
+                "leadership",
+                "training",
+                "ministering",
+                "zion"
+            ],
+            "imageUrl": "https://example.com/images/leadership-training.jpg"
+        }
+    ],
+    "metadata": {
+        "lastUpdated": "2025-01-15T10:00:00Z",
+        "totalMemories": 18,
+        "categories": [
+            "Activity",
+            "Spiritual",
+            "Service",
+            "Development",
+            "Cultural"
+        ],
+        "locations": [
+            "Lekki Stake Center",
+            "Tarkwa Bay",
+            "Aba Nigeria Temple",
+            "Lagos Lagoon",
+            "Various Locations"
+        ],
+        "authors": [
+            "Sarah Johnson",
+            "Michael Adebayo",
+            "Grace Okafor",
+            "David Ogundimu",
+            "Blessing Okoro",
+            "Chioma Nwachuku",
+            "Emmanuel Taiwo",
+            "Peace Akinola",
+            "Joseph Adeniyi",
+            "Ruth Adeolu",
+            "Hannah Ojo",
+            "Samuel Ogbonna",
+            "Esther Bamidele",
+            "Mary Oluwaseun",
+            "Daniel Okwu",
+            "Faith Adebola",
+            "Peter Okechukwu",
+            "Miracle Okafor"
+        ]
+    }
+}
