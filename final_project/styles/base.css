@@ -440,11 +440,34 @@ nav {
         gap: 2px;
 
     }
-    .down{
-        flex-direction: column;
-        text-align: center;
-    }
+ 
 
+    .pics {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        font-size: 1.8rem;
+        padding: 10px;
+    }
+    
+    .down {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .down img {
+        height: 150px;
+    }
+    
+    .down img:hover {
+        transform: scale(1.5) rotate(2deg);
+    }
+    
+    .down figcaption {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 0.9rem;
+        }
 
 
 
