@@ -67,7 +67,7 @@ button:hover {
     background-color: #c0392b;
 }
 
-.match-result {
+#match-result {
     border-left: 4px solid #e74c3c;
     padding-left: 15px;
     margin-bottom: 15px;
@@ -75,6 +75,43 @@ button:hover {
 
 .hidden {
     display: none;
+}
+
+/* Add to your find_love.css */
+.profile-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.profile-details {
+    margin-top: 15px;
+}
+
+.label {
+    font-weight: bold;
+    color: #555;
+}
+
+.section {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #ddd;
+}
+
+.submission-message {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #e74c3c;;
+}
+
+/* Add required field indicators */
+.form-group label:after {
+    content: " *";
+    color: #e74c3c;
 }
 
 
