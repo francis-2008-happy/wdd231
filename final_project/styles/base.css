@@ -54,8 +54,8 @@ header {
 
 .header-content nav {
     background-color: white;
-    padding: 1rem;
-    margin: 1rem;
+    /* padding: 1rem;
+    margin: 1rem; */
 }
 .header-content nav a {
     color:  var(--primary-color);
@@ -314,7 +314,7 @@ nav {
 .navigation {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .navigation li a {
